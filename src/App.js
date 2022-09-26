@@ -4,15 +4,16 @@ import HomeRoute from './components/routes/home/HomeRoute';
 import Navigation from './components/routes/navigation/Navigation';
 import Authentication from './components/routes/authentication/authentication';
 import Shop from './components/routes/shop/Shop';
-
+import CheckOut from './components/routes/checkout/CheckOut';
 
 const App= () =>{
   return (
     <Routes>
       <Route path='/' element={< Navigation/>}>
         <Route index element={<HomeRoute/>}/>
-        <Route path='shop' element={<Shop/>}/>
+        <Route path='shop/*' element={<Shop/>}/>
         <Route path='auth' element={<Authentication/>}/>
+        <Route path='checkout' element={<CheckOut/>}/>
       </Route>
     </Routes>
    

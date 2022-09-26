@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import CategoryItem from '../category-item/CategoryItem';
+import DirectoryItem from '../directory-item/DirectoryItem';
 import './Directory.scss';
 
  const Directory = ({categories}) => {
@@ -10,7 +10,7 @@ import './Directory.scss';
     {categories.map((category)=>{
    
    return(
-    <CategoryItem key={category.id} category={category}/>
+    <DirectoryItem key={category.id} category={category}/>
     )
     })}
       
